@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Coding Quiz Challenge</h1>
+        <div id="question-container">
+            <!-- Questions will be injected here by JavaScript -->
+        </div>
+        <button id="start-btn">Start Quiz</button>
+        <div id="timer">Time: <span id="time">60</span> seconds</div>
+        <div id="score-container">Your Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="score-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Score: <span id="final-score"></span></h2>
+            <form id="save-score-form">
+                <input type="text" id="initials" placeholder="Your Initials" maxlength="3">
+                <button type="submit">Save Score</button>
+            </form>
+        </div>
+    </div>
+
+<div id="high-scores">
+    <h2>High Scores</h2>
+    <ul id="high-scores-list">
+        <!-- High scores will be injected here by JavaScript -->
+    </ul>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
