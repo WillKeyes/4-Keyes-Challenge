@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             score++;
             scoreDisplay.innerText = score;
         } else {
-            timeLeft -= 5; // Subtract time for wrong answers
+            timeLeft -= 10; // Subtract time for wrong answers
         }
         currentQuestionIndex++;
         showNextQuestion();
